@@ -1,13 +1,109 @@
 <!DOCTYPE html>
-<html>
-<head><title>Biodata Diri</title></head>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - Muhammad Faris Saputra</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav {
+            background-color: #2c3e50;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            background: white;
+            width: 90%;
+            max-width: 700px;
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f8f9fa;
+            width: 35%;
+            color: #34495e;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .profile-img {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+        }
+    </style>
+</head>
 <body>
-    <nav><a href="index.html">Kembali ke Beranda</a></nav>
-    <h1>Profil Mahasiswa</h1>
-    <table border="1" cellpadding="5">
-        <tr><td>Nama</td><td>Muhammad Faris Saputra</td></tr>
-        <tr><td>NIM</td><td>2310715110006</td></tr>
-        <tr><td>Mata Kuliah</td><td>Sistem Informasi Manajemen Perikanan</td></tr>
-    </table>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="gallery.html">Galeri</a>
+        <a href="video.html">Video</a>
+    </nav>
+
+    <div class="container">
+        <h2>Biodata Diri</h2>
+        
+        <img src="https://via.placeholder.com/150" alt="Foto Profil" class="profile-img" width="150">
+
+        <table>
+            <tr>
+                <th>Nama Lengkap</th>
+                <td>Muhammad Faris Saputra</td>
+            </tr>
+            <tr>
+                <th>NIM</th>
+                <td>2310715110006</td>
+            </tr>
+            <tr>
+                <th>Program Studi</th>
+                <td>S1 Ekonomi Pembangunan</td>
+            </tr>
+            <tr>
+                <th>Fakultas</th>
+                <td>Perikanan dan Ilmu Kelautan</td>
+            </tr>
+            <tr>
+                <th>Mata Kuliah</th>
+                <td>Sistem Informasi Manajemen Perikanan</td>
+            </tr>
+        </table>
+    </div>
+
 </body>
 </html>
+
