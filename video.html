@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tugas - Muhammad Faris Saputra</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav {
+            background-color: #2c3e50;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            background: white;
+            width: 90%;
+            max-width: 800px;
+            margin: 30px 0;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        /* AGAR VIDEO PAS DI LAYAR HP (RESPONSIVE) */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Rasio 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .description {
+            margin-top: 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+ head>
+<body>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="gallery.html">Galeri</a>
+        <a href="video.html">Video</a>
+    </nav>
+
+    <div class="container">
+        <h2>Video SIMP</h2>
+        
+        <div class="video-container">
+            <iframe src="https://youtu.be/KVjBCT2Lc94?si=oF0itu9EDsyy4OIn" allowfullscreen></iframe>
+        </div>
+
+        <div class="description">
+            <p>Video ini menjelaskan tentang tugas Sistem Informasi Manajemen yang saya kerjakan. Silakan klik tombol putar untuk menonton.</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
