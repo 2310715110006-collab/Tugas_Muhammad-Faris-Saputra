@@ -1,15 +1,118 @@
-<div style="margin-bottom: 1000px;">
-    <h2 style="color: #118EE0;">1. Form Survei Kepuasan</h2>
-    <iframe src="https://docs.google.com/spreadsheets/d/10LQJjaVPXWWKdiagrQEULEPvGf-Nx5C3vrda22j-ke4/edit?resourcekey=&gid=358713368#gid=358713368" width="100%" height="600" frameborder="0"></iframe>
-</div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Manajemen - DANA e-mas</title>
+    <style>
+        /* CSS UNTUK TAMPILAN LEBAR DAN PROFESIONAL */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 10px; /* Jarak tipis di pinggir layar */
+        }
 
-<div style="margin-bottom: 1000px;">
-    <h2 style="color: #118EE0;">2. Dashboard Real-Time (Looker Studio)</h2>
-    <iframe src="https://datastudio.google.com/embed/reporting/5368fc57-6677-47f9-b245-78eb2e478201/page/mBjxF" width="100%" height="500" frameborder="0"></iframe>
-</div>
+        .container {
+            width: 98%; /* Menggunakan 98% lebar layar */
+            max-width: 1500px; /* Batas maksimal layar monitor besar */
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
 
-<div style="margin-bottom: 1000px;">
-    <h2 style="color: #118EE0;">3. Analisis Kesimpulan (Excel Rumus IF)</h2>
-    <p>Data di bawah ini diproses otomatis menggunakan logika fungsi IF dan Average:</p>
-    <iframe src="https://docs.google.com/spreadsheets/d/10LQJjaVPXWWKdiagrQEULEPvGf-Nx5C3vrda22j-ke4/edit?resourcekey=&gid=1475862288#gid=1475862288" width="100%" height="450" frameborder="0"></iframe>
-</div>
+        .header {
+            text-align: center;
+            border-bottom: 4px solid #118EE0;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #118EE0;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            width: 100%;
+        }
+
+        .section-title {
+            background-color: #118EE0;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 10px rgba(17, 142, 224, 0.3);
+        }
+
+        .description {
+            background: #eef9ff;
+            padding: 15px;
+            border-left: 5px solid #118EE0;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        /* STYLING IFRAME AGAR LEBAR DAN BESAR */
+        iframe {
+            width: 100%; /* Memenuhi lebar kontainer */
+            border: 2px solid #eee;
+            border-radius: 12px;
+            background-color: #fff;
+            transition: 0.3s;
+        }
+
+        iframe:hover {
+            border-color: #118EE0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #888;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Sistem Informasi Manajemen</h1>
+            <p>Analisis Kepuasan Pengguna Fitur <strong>DANA e-mas</strong> | Disusun oleh: Faris</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">1. Form Pengumpulan Data</h2>
+            <p class="description">Silakan isi survei di bawah ini untuk menguji sistem input data secara real-time.</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1TwuIZWesnV0tMxJH2yxIwPikonQg2IfQN92-IsQC3Ivf-g/viewform?usp=publish-editor" height="850">Memuat…</iframe>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">2. Dashboard Visualisasi (Looker Studio)</h2>
+            <p class="description">Grafik di bawah ini akan terupdate secara otomatis setiap kali ada data baru yang masuk dari form di atas.</p>
+            <iframe src="https://datastudio.google.com/embed/reporting/5368fc57-6677-47f9-b245-78eb2e478201/page/mBjxF" height="750" allowfullscreen></iframe>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">3. Analisis Logika IF & Frekuensi (Excel/Sheets)</h2>
+            <p class="description">Tabel analisis statistik menggunakan fungsi AVERAGE, COUNTIF, dan logika IF untuk menentukan kategori kepuasan.</p>
+            <iframe src="https://docs.google.com/spreadsheets/d/10LQJjaVPXWWKdiagrQEULEPvGf-Nx5C3vrda22j-ke4/edit?resourcekey=&gid=1475862288#gid=1475862288" height="600"></iframe>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Tugas Analisis Sistem - Faris | Project Terintegrasi Google Ecosystem
+        </div>
+    </div>
+
+</body>
+</html>
