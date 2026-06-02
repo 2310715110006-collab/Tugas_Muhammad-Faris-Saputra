@@ -66,33 +66,31 @@
             background-color: #2980b9;
             transform: translateY(-3px);
         } 
- /* ===================================================
-   CSS TOMBOL TUGAS AKHIR: BIRU MUDA & LONJONG
+/* ===================================================
+   SINKRONISASI TOMBOL TUGAS AKHIR JADI BIRU MUDA LONJONG
    =================================================== */
+.container a[href*="DEMO-TUGAS"],
 .container .btn-project {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 8px !important;                  
-    padding: 10px 24px !important;   /* padding kanan-kiri lebih lebar agar terlihat lonjong */
-    margin-top: 15px !important;           
-    background: #00cec9 !important;  /* Warna Biru Muda/Cyan yang cerah dan segar */
-    color: #ffffff !important;       /* Tulisan di dalam tombol warna putih */
-    text-decoration: none !important;      
-    border-radius: 50px !important;  /* Membuat bentuk tombol menjadi lonjong sempurna (kapsul) */
-    font-weight: 500 !important;           
-    font-size: 14px !important;
-    width: fit-content !important;   /* Lebar tombol otomatis pas menyesuaikan panjang tulisan */
-    box-shadow: 0 4px 12px rgba(0, 206, 201, 0.3) !important; /* Bayangan halus warna biru muda */
-    transition: all 0.3s ease !important;  
-}
-
-/* Efek Interaktif Saat Kursor Menyentuh Tombol (Hover) */
-.container .btn-project:hover {
-    background: #00b894 !important;  /* Berubah warna jadi hijau toska/bahari saat disentuh */
-    box-shadow: 0 6px 15px rgba(0, 206, 201, 0.5) !important; 
-    transform: translateY(-1px) !important; /* Sedikit terangkat biar interaktif */
-    color: #ffffff !important;
+    background: #46a1de !important;  /* Menyamakan warna biru muda dengan tombol lain */
+    background-color: #46a1de !important;
+    color: #ffffff !important;       /* Tulisan tetap putih */
     text-decoration: none !important;
+    
+    /* Membuat bentuk lonjong sempurna kapsul */
+    border-radius: 50px !important;  
+    padding: 10px 24px !important;   /* Menjaga ukuran tombol proporsional */
+    display: inline-block !important;
+    width: fit-content !important;   /* Lebar otomatis mengikuti tulisan */
+    
+    font-weight: 500 !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+}
+/* Efek Hover saat Disentuh */
+.container a[href*="DEMO-TUGAS"]:hover,
+.container .btn-project:hover {
+    filter: brightness(1.1) !important; /* Sedikit lebih cerah saat di-hover */
+    transform: translateY(-1px) !important;
 }
     </style>
 </head>
