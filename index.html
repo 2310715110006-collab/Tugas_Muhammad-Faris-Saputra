@@ -67,31 +67,31 @@
             transform: translateY(-3px);
         } 
   /* ===================================================
-   CSS KHUSUS TOMBOL TUGAS AKHIR (SIM KUB)
+   CSS ANTI-GAGAL KHUSUS TOMBOL TUGAS AKHIR
    =================================================== */
-.btn-project {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;                  /* Jarak antara ikon anchor dan teks */
-    padding: 12px 24px;         /* Ukuran dalam tombol agar proporsional */
-    margin-top: 10px;           /* Jarak aman agar tidak menempel dengan teks di atasnya */
-    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); /* Warna gradasi hijau bahari */
-    color: #ffffff !important;  /* Memaksa warna teks tetap putih, tidak mengikuti link standar */
-    text-decoration: none;      /* Menghilangkan garis bawah khas link */
-    border-radius: 8px;         /* Sudut tombol melengkung halus */
-    font-weight: 600;           /* Teks sedikit tebal agar tegas */
-    font-size: 14px;
-    box-shadow: 0 4px 15px rgba(26, 188, 156, 0.25); /* Efek bayangan lembut di bawah tombol */
-    transition: all 0.3s ease;  /* Animasi halus selama 0.3 detik saat hover */
+.container .btn-project {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;                  
+    padding: 12px 24px !important;         
+    margin-top: 15px !important;           
+    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%) !important; 
+    color: #ffffff !important;  
+    text-decoration: none !important;      
+    border-radius: 8px !important;         
+    font-weight: 600 !important;           
+    font-size: 14px !important;
+    box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3) !important; 
+    transition: all 0.3s ease !important;  
 }
 
-/* Efek Interaktif Saat Kursor Menyentuh Tombol (Hover) */
-.btn-project:hover {
-    transform: translateY(-2px); /* Tombol sedikit terangkat ke atas */
-    box-shadow: 0 6px 20px rgba(26, 188, 156, 0.4); /* Bayangan menjadi lebih tegas */
-    filter: brightness(1.1);     /* Warna tombol menjadi sedikit lebih cerah */
+/* Efek Hover Anti-Gagal */
+.container .btn-project:hover {
+    transform: translateY(-2px) !important; 
+    box-shadow: 0 6px 20px rgba(26, 188, 156, 0.5) !important; 
+    filter: brightness(1.1) !important;     
     color: #ffffff !important;
-}
+    text-decoration: none !important;
 }
     </style>
 </head>
@@ -104,7 +104,9 @@
         <a href="video.html">Video</a>
         <a href="formulir.html">Formulir</a>
         <a href="tugas3.html">Lihat Tugas 3 </a>
-         <a href="tugas4.html">Lihat Tugas 4 </a>
+        <a href="tugas4.html">Lihat Tugas 4 </a>
+        <a href="https://faroukmuhamad-gif.github.io/DEMO-TUGAS/index.html#sejarah" class="btn-final-project" target="_blank">
+        <i class="fa-solid fa-anchor"></i> Tugas Akhir</a>
     </nav>
 
     <div class="container">
@@ -117,7 +119,7 @@
         <a href="tugas3.html"class="btn">Lihat Tugas 3</a>
         <a href="tugas4.html"class="btn">Lihat Tugas 4</a>
         <a href="https://faroukmuhamad-gif.github.io/DEMO-TUGAS/index.html#sejarah" class="btn-final-project" target="_blank">
-    <i class="fa-solid fa-anchor"></i> Tugas Akhir</a>
+        <i class="fa-solid fa-anchor"></i> Tugas Akhir</a>
     </div>
 
 </body>
