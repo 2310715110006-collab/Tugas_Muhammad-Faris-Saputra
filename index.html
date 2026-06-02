@@ -65,7 +65,34 @@
         .btn:hover {
             background-color: #2980b9;
             transform: translateY(-3px);
-        }
+        } 
+  /* ===================================================
+   CSS KHUSUS TOMBOL TUGAS AKHIR (SIM KUB)
+   =================================================== */
+.btn-project {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;                  /* Jarak antara ikon anchor dan teks */
+    padding: 12px 24px;         /* Ukuran dalam tombol agar proporsional */
+    margin-top: 10px;           /* Jarak aman agar tidak menempel dengan teks di atasnya */
+    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); /* Warna gradasi hijau bahari */
+    color: #ffffff !important;  /* Memaksa warna teks tetap putih, tidak mengikuti link standar */
+    text-decoration: none;      /* Menghilangkan garis bawah khas link */
+    border-radius: 8px;         /* Sudut tombol melengkung halus */
+    font-weight: 600;           /* Teks sedikit tebal agar tegas */
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(26, 188, 156, 0.25); /* Efek bayangan lembut di bawah tombol */
+    transition: all 0.3s ease;  /* Animasi halus selama 0.3 detik saat hover */
+}
+
+/* Efek Interaktif Saat Kursor Menyentuh Tombol (Hover) */
+.btn-project:hover {
+    transform: translateY(-2px); /* Tombol sedikit terangkat ke atas */
+    box-shadow: 0 6px 20px rgba(26, 188, 156, 0.4); /* Bayangan menjadi lebih tegas */
+    filter: brightness(1.1);     /* Warna tombol menjadi sedikit lebih cerah */
+    color: #ffffff !important;
+}
+}
     </style>
 </head>
 <body>
